@@ -1,93 +1,135 @@
-# Hao.Gitlab.Io
+# Jekflix 主题模板
 
+![Jekflix Template Cover Image](https://res.cloudinary.com/dm7h7e8xj/image/upload/v1505354182/jekflix-logo_mfngps.png)
 
+>在此处查看[实列](https://jekflix.rossener.com/).
 
-## Getting started
+## 这是什么？
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+>jekyll 主题灵感来自 Netflix （网飞）面板，适合喜欢电影和电视剧的人，它是一个酷炫外观的博客.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+![Jekflix Screenshot Image](https://res.cloudinary.com/dm7h7e8xj/image/upload/v1566390829/jekflix-screenshot-2_zfiog2.jpg)
 
-## Add your files
+## 特征
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+- [在线搜索](docs/features.md#live-search)
+- [预设阅读时间](docs/features.md#estimated-reading-time)
+- [阅读进度条（可选）](docs/features.md#reading-progress-bar) 
+- [新帖子 标签](docs/features.md#new-post-tag)
+- [按需加载图像](docs/features.md#load-images-on-demand)
+- [推送菜单](docs/features.md#push-menu)
+- [SVG 图标](docs/features.md#svg-icons)
+- [用于创建帖子的脚本](docs/features.md#shell-script-to-create-posts)
+- [标签页面](docs/features.md#tags-page)
+- [关于页面](docs/features.md#about-page)
+- [联系页面](docs/features.md#contact-page)
+- [404 错误页](docs/features.md#404-error-page)
+- [RSS 地图](docs/features.md#feed-rss)
+- [Disqus（可选）](docs/features.md#disqus) 
+- [精选帖子（可选）](docs/features.md#featured-post) 
+- [主页分页（可选）](docs/features.md#home-page-pagination)
+- [帖子侧边栏（可选）](docs/features.md#posts-sidebar)
+- [分页帖子（可选）](docs/features.md#paginated-posts) 
+- [触发模式（可选）](docs/features.md#before-you-go-modal) 
+- [帖子推荐](docs/features.md#post-recommendation)
+- [Netlify CMS 发帖管理系统](docs/features.md#netlify-cms-ready)
+- [翻译](docs/setup.md#translations) **new!**
+- [数学表达式（可选）新增！](docs/features.md#math-expressions) **new!**
+
+## 搜索引擎优化
+
+- Google Analytics       / 谷歌分析
+- Meta tags              / 元标记
+- JSON-LD
+- Sitemap.xml            / 网站地图.xml
+- Social Media ready     /社交媒体就绪
+
+## 快速安装
+
+>如果您要安装到现有的 Jekyll 项目，请将此行添加到项目的`Gemfile`
 
 ```
-cd existing_repo
-git remote add origin https://gitlab.com/aiyobudui/hao.gitlab.io.git
-git branch -M main
-git push -uf origin main
+gem "jekflix"
 ```
 
-## Integrate with your tools
+将此行添加到项目的： `_config.yml`:
 
-- [ ] [Set up project integrations](https://gitlab.com/aiyobudui/hao.gitlab.io/-/settings/integrations)
+```
+theme: jekflix
+```
 
-## Collaborate with your team
+然后运行：
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+```
+$ bundle
+```
 
-## Test and Deploy
+或者自己安装为：
 
-Use the built-in continuous integration in GitLab.
+```
+$ gem install jekflix
+```
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+### 主题颜色
 
-***
+主题颜色目录 `/assets/css/styles.scss` 
 
-# Editing this README
+```txt
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+$themeColor: #ff0a16;
+$primaryDark: #141414;
+$accentDark: #ffffff;
+$lightGray: #f2f2f2;
+$texts: #333333;
 
-## Suggestions for a good README
+@import "jekflix";
+```
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+>修改上面的颜色值可以更改主题颜色.
 
-## Name
-Choose a self-explaining name for your project.
+### 站点配置
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+您可以在项目中更改的一些属性，请查看 [文档](docs/settings.md#settings) 更改根目录下的`_config.yml`文件，它能自定义一些配置.
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+## 安装
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+>如果要克隆此存储库，请按照以下说明操作：
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+- [环境](docs/setup.md#environment)
+- [安装模板](docs/setup.md#installing-template)
+- [本地运行](docs/setup.md#running-local)
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+## 自定义
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+>请参阅 [设置文档](docs/settings.md#settings) 以自定义布局、标题、社交媒体等.
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+## 主题
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+>您可以通过更改文件轻松更改主题颜色 `src/yml/theme.yml`, 然后在您的终端中运行 `gulp build` .
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+## GitHub pages
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+>这是一个已知问题，将网站部署到 GitHub pages 时无法运行 gulp， 因此，您必须更改主题的颜色并在本地执行命令，`gulp build` 然后将更改推送到GitHub 仓库中，目前没有其他解决办法.
+要查看部署网站时的外观，请在本地运行`gulp build`后，在访问. http://127.0.0.1:4000/
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+## 发布帖子
 
-## License
-For open source projects, say how it is licensed.
+使用 `Markdown`[格式参看](docs/post.md#front-matter-properties) 创建帖子.
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+> **Note:** 注意：如果要克隆此存储库，可以使用可用[脚本](docs/post.md#creating-a-post)自动生成帖子.
+
+## 问题？
+
+>请提交  [GitHub 问题](https://github.com/thiagorossener/jekflix-template/issues/new).
+
+## 许可证
+
+>Jekflix 模板在 MIT许可证下可用.有关详细信息，请参阅[许可证](https://github.com/thiagorossener/jekflix-template/blob/master/LICENSE)文件. 
+
+## 作者
+
+[Thiago Rossener](https://rossener.com/)
+
+## 部署状态标记
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/50f28f87-f311-4154-ba6e-539281756cc5/deploy-status)](https://app.netlify.com/sites/hao/deploys)

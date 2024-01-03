@@ -1,0 +1,144 @@
+# 站点设置
+name: 对酒当歌分享
+title: 对酒当歌分享
+description: 用阿里云盘在家就能轻松搭建家庭影院,看美剧,日韩剧,电影,动画,电影,动漫,学习资料等非常轻松，资源一键保存，我这里分享了一些自己整理收集的优质网盘资源，欢迎您的访问。
+tags:
+  - 对酒当歌分享
+  - 对酒当歌影视资源分享
+#主页中大图,它接受值true 和 false
+show_hero: false
+#将分页添加到主页，将一个整数设置为 0 >。
+paginate: 48
+menu:
+  - title: 首  页
+    url: /
+  - title: 国产剧
+    url: /category/gcj
+  - title: 欧美剧
+    url: /category/omj
+  - title: 日韩剧
+    url: /category/rhj
+  - title: 国产动漫
+    url: /category/gcdm
+  - title: 日本动漫
+    url: /category/rbdm
+  - title: 欧美动漫
+    url: /category/omdm
+  - title: 儿童动画
+    url: /category/etdh
+  - title: 热门电影
+    url: /category/rmdy  
+  - title: 电影合集
+    url: /category/dyhj
+  - title: 动画电影
+    url: /category/dhdy
+  - title: 纪录片
+    url: /category/jlp
+  - title: 综 艺
+    url: /category/zy
+  - title: 书 籍
+    url: /category/shu
+  - title: 其 他
+    url: /category/qt
+  - title: 标签菜单
+    url: /tags/
+  - title: 低价购阿里云盘会员
+    url: /ok/
+  #- title: 联系
+  #  url: /contact
+  #- title: 关于
+  #  url: /about
+  #- title: SSR地图
+  #  url: feed.xml
+email: jaygny@qq.com
+
+# See: https://disqus.com/
+# disqus_username: aiyobucuo
+# 联系表单设置
+# See: https://formspree.io/
+# formspree_form_id: formspree_form_id
+
+# 社交媒体设置
+# 如果不需要，请将其删除
+# github_username: aiyobudui 
+# facebook_username: facebook_username
+# twitter_username: twitter_username
+# instagram_username: instagram_username
+# linkedin_username: linkedin_username
+# medium_username: medium_username
+
+# 帖子显示设置
+show_time_bar: false
+show_modal_on_exit: false
+show_modal_on_finish_post: false
+#在一列和两列之间切换帖子布局。它接受值或 true  false
+two_columns_layout: true        
+
+# 高级设置
+# 设置站点的子路径，例如 /blog
+baseurl: "" 
+url: "" 
+# google_analytics: UA-XXXXXXXX-X
+language: "zh-cn"
+categories_folder: category
+sent_message_url: /contact/message-sent/
+
+
+# 生成设置
+markdown: kramdown
+highlighter: rouge
+permalink: /:title/
+collections:
+  authors:
+    output: true
+paginate_path: "/page/:num/"
+show_get_theme_btn: true
+use_logo: false
+
+# 内容分页器
+paginate_content:
+  enabled: true
+  debug: false
+  collections:
+    - posts
+  auto: false
+  separator: "--page-break--"
+  permalink: "/:num/"
+  seo_canonical: true
+  properties:
+    part:
+      is_generated: true
+    last:
+      is_generated: true
+    single:
+      is_generated: true
+
+# SASS
+sass:
+  style: compressed
+
+# 插件
+plugins:
+  - jekyll-paginate
+  - jekyll-paginate-content
+
+# 排除我的节点相关内容
+exclude: [
+  'docs/',
+  'vendor/',
+  'LICENSE',
+  'CHANGELOG.md',
+  'jekflix.gemspec',
+  'package.json',
+  'package-lock.json',
+  'src',
+  'node_modules',
+  'initpost.sh',
+  'Gemfile',
+  'Gemfile.lock',
+  'gulpfile.js',
+  'README.md'
+]
+
+# Theme
+# version: v3.1.2
