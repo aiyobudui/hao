@@ -24,5 +24,3 @@ pages:
     # a pages deploy
     - public
     - _site
-  only:
-  - master
