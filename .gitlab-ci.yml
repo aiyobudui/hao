@@ -13,7 +13,8 @@ before_script:
 pages:
   stage: deploy
   script:
-    - bundle exec jekyll build -d public
+  - bundle install
+  - bundle exec jekyll build -d public
   artifacts:
     paths:
       # The folder that contains the files to be exposed at the Page URL
@@ -23,10 +24,6 @@ pages:
     # a pages deploy
     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
     - public
+    - _site
   only:
-    - master
-
-test:
-  stage: test
-  script:
-    - bundle exec jekyll build -d public
+  - master
