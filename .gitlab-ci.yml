@@ -24,6 +24,6 @@ pages:
   - bundle exec jekyll build -d public
   artifacts:
     paths:
-    - _site
+    - public
   only:
   - master
