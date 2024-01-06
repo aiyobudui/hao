@@ -12,6 +12,12 @@ paginate: 24
 menu:
   - title: 首  页
     url: /
+  - title: 热门电影
+    url: /category/rmdy
+  - title: 电影合集
+    url: /category/dyhj
+  - title: 动画电影
+    url: /category/dhdy
   - title: 国产剧
     url: /category/gcj
   - title: 欧美剧
@@ -26,12 +32,6 @@ menu:
     url: /category/omdm
   - title: 儿童动画
     url: /category/etdh
-  - title: 热门电影
-    url: /category/rmdy  
-  - title: 电影合集
-    url: /category/dyhj
-  - title: 动画电影
-    url: /category/dhdy
   - title: 纪录片
     url: /category/jlp
   - title: 综 艺
