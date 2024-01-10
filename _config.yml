@@ -122,6 +122,7 @@ sass:
 
 # 插件
 plugins:
+  - jekyll-paginate
   - jekyll-paginate-v2
   - jekyll-paginate-content
 
