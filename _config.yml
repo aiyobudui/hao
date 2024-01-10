@@ -122,7 +122,7 @@ sass:
 
 # 插件
 plugins:
-  - jekyll-paginate-V2
+  - jekyll-paginate-v2
   - jekyll-paginate-content
 
 # 排除我的节点相关内容
