@@ -16,7 +16,7 @@ source "https://rubygems.org"
 # 如果你有任何插件，把它们放在这里！
 gem 'kramdown', '~> 2.4'
 gem 'kramdown-parser-gfm', '~> 1.1'
-gem 'rouge', '~> 4.2'
+gem 'rouge'
 gem 'jekyll'
 gem 'jekyll-paginate-v2', '~> 3.0'
 gem 'jekyll-paginate-content', '~> 1.1'
