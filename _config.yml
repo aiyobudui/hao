@@ -82,6 +82,9 @@ url: ""
 language: "zh-cn"
 categories_folder: category
 sent_message_url: /contact/message-sent/
+# 百度收录
+baidu_site_verification: true
+
 
 
 # 生成设置
@@ -119,7 +122,7 @@ sass:
 
 # 插件
 plugins:
-  - jekyll-paginate
+  - jekyll-paginate-V2
   - jekyll-paginate-content
 
 # 排除我的节点相关内容
