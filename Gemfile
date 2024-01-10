@@ -21,6 +21,5 @@ gem 'jekyll'
 gem 'jekyll-paginate-v2', '~> 3.0'
 gem 'jekyll-paginate-content', '~> 1.1'
 gem 'json', '~> 2.7', '>= 2.7.1'
-gem 'jekyll-sass-converter', '~> 3.0'
 gem 'jekflix', '~> 3.1', '>= 3.1.2'
 
