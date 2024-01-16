@@ -85,9 +85,6 @@ sent_message_url: /contact/message-sent/
 # 百度收录
 baidu_site_verification: true
 
-#修改时区为上海
-timezone: Asia/Shanghai
-
 # 生成设置
 markdown: kramdown
 highlighter: rouge
@@ -125,6 +122,11 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-paginate-content
+
+#修改时区为上海
+timezone: Asia/Shanghai
+
+
 
 # 排除我的节点相关内容
 exclude: [
