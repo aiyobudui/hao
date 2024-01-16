@@ -1,3 +1,6 @@
+# Netlify部署状态徽章
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1da1d5b8-970b-4ea3-ad98-328d0c5a61ac/deploy-status)](https://app.netlify.com/sites/hao/deploys)
+
 # Jekflix 主题模板
 
 ![Jekflix Template Cover Image](https://res.cloudinary.com/dm7h7e8xj/image/upload/v1505354182/jekflix-logo_mfngps.png)

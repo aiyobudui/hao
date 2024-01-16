@@ -123,8 +123,8 @@ plugins:
   - jekyll-paginate
   - jekyll-paginate-content
 
-#修改时区为上海
-timezone: Asia/Shanghai
+#修改时区为中国
+timezone: +800
 
 
 
