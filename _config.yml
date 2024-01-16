@@ -85,6 +85,8 @@ sent_message_url: /contact/message-sent/
 # 百度收录
 baidu_site_verification: true
 
+#修改时区为上海
+timezone: Asia/Shanghai
 
 
 # 生成设置
