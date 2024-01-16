@@ -4,7 +4,7 @@ title: 对酒当歌分享
 description: 网盘资源分享，看美剧,日韩剧,电影,动画,电影,动漫,学习资料等非常轻松，资源一键保存，我这里分享了一些自己整理收集的优质网盘资源，欢迎您的访问。
 tags:
   - 对酒当歌分享
-  - 对酒当歌分享资源
+  - 网盘资源，对酒当歌分享，
 #主页中大图,它接受值true 和 false
 show_hero: false
 #将分页添加到主页，将一个整数设置为 0 >。
@@ -87,7 +87,6 @@ baidu_site_verification: true
 
 #修改时区为上海
 timezone: Asia/Shanghai
-
 
 # 生成设置
 markdown: kramdown
