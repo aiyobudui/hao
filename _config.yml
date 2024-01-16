@@ -12,12 +12,13 @@ paginate: 30
 menu:
   - title: 首  页
     url: /
-  - title: 热门电影
+  - title: 热门电影（近期电影）
     url: /category/rmdy
-  - title: 电影合集
+  - title: 电影合集（系列电影）
     url: /category/dyhj
-  - title: 动画电影
+  - title: 动画电影（电影合集）
     url: /category/dhdy
+    ---
   - title: 国产剧
     url: /category/gcj
   - title: 欧美剧
@@ -32,6 +33,8 @@ menu:
     url: /category/omdm
   - title: 儿童动画
     url: /category/etdh
+  - title: 电脑游戏（3A大作）
+    url: /category/game
   - title: 纪录片
     url: /category/jlp
   - title: 综 艺
