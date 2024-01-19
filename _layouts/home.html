@@ -106,15 +106,13 @@ layout: main
     <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
     <script>LA.init({ id: "3GtVE9vOSi1kJYmK", ck: "3GtVE9vOSi1kJYmK", autoTrack: true, hashMode: true })</script>
 
-    <!--音乐-->
-    <!-- require APlayer -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
-    <!--require MetingJS -->
-    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+  <!--音乐-->
+  <link rel="stylesheet" href="../assets/Aplayer/APlayer.min.css" th:href="@{/assets/Aplayer/APlayer.min.css}">
+  <script src="../assets/Aplayer/APlayer.min.js" th:src="@{/lib/Aplayer/APlayer.min.js}"></script>
+  <script src="../assets/Aplayer/Meting.min.js" th:src="@{/lib/Aplayer/Meting.min.js}"></script>
 
     <!--音乐插件-->
-    <meting-js server="netease" type="playlist" id="8925762343" fixed="ture" mini="false" autoplay="false" volume="0.7"
+    <meting-js server="netease" type="playlist" id="8925762343" fixed="ture" mini="ture" autoplay="false" volume="0.7"
         loop="all" order="random" preload="auto" list-folded="ture" list-max-height="500px" lrc-type="0" mutex="true">
     </meting-js>
 
